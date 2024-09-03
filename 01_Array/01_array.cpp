@@ -114,13 +114,13 @@ int Array::find(int value){
     return -1;
 }
 
-int main() {
-    Array a(5);
-    a.append(3);
-    a.append(5);
-    a.insert(0,4);
-    a.edit(1,2);
-    a.isdelete(2);
-    a.printarray();
-    return 0;
-}
+// int main() {
+//     Array a(5);
+//     a.append(3);
+//     a.append(5);
+//     a.insert(0,4);
+//     a.edit(1,2);
+//     a.isdelete(2);
+//     a.printarray();
+//     return 0;
+// }
