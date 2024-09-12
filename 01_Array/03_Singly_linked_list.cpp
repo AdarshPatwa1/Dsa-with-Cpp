@@ -123,6 +123,7 @@ void SLL::insertatlast(int data){
         start=n;
     }
     else{
+        t=start;
         while(t->next!=NULL){ //to check if t->next=null or not if null then we assisn n if not then
             t=t->next         // will move ahead
         }
