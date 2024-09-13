@@ -95,7 +95,7 @@ node* SLL::search(int data){
     node *t;
     t=start;
     while(t!=NULL){
-        if(t->itme==data){
+        if(t->item==data){
             return t;
         }
         t=t->next;
