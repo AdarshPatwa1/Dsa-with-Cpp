@@ -21,8 +21,14 @@ class SLL{
     void deletefirst();
     void deletelast();
     void deletespecific(node *);
+    int firstnode();
     ~SLL();
 };
+int SLL::firstnode()
+{
+    return start;
+}
+
 SLL::~SLL(){
     while(start)
     {
