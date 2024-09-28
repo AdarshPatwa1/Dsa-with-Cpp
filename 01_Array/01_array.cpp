@@ -8,6 +8,7 @@ class Array{
     int *ptr;
     public:
     Array(int);
+    Array(Array &);
     bool isempty();
     void append(int);
     void printarray();
@@ -19,12 +20,40 @@ class Array{
     int count();
     ~Array();
     int find(int);
+    int getcap();
+    void operator=(Array &); // operator overloading
 };  
+
+void Array::operator=(Array &arr){
+    capacity=arr.capacity;
+    lastindex=arr.lastindex;
+    if(ptr!=NULL){
+    delete []ptr;
+    }
+    ptr=new int[capacity];
+    for(int i=0;i<=lastindex;i++){
+        ptr[i]=arr.ptr[i];
+    }
+}
+
+int Array::getcap(){
+    return capacity;
+}
 
 Array::Array(int size){
         lastindex=-1;
         capacity=size;
         ptr=new int[capacity];
+}
+
+Array::Array(Array &arr)
+{
+    capacity=arr.capacity;
+    lastindex=arr.lastindex;
+    ptr=new int[capacity];
+    for(int i=0;i<=lastindex;i++){
+        ptr[i]=arr.ptr[i];
+    }
 }
     
 bool Array::isempty(){
