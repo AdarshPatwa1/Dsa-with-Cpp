@@ -3,6 +3,12 @@
     "files.associations": {
         "charconv": "cpp",
         "iostream": "cpp",
-        "02_doubly_linked_list": "cpp"
+        "02_doubly_linked_list": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp"
     }
 }
